@@ -1,6 +1,6 @@
 # CBLAB-deliveryapi
 
-REST API desenvolvida utilizando o framework flask.
+REST API para serviço de delivery. Desenvolvida utilizando o framework flask.
 
 ## Backlog
 | O que | Porque |
