@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  deliveryapi:
+    image: deliveryapi
+    container_name: deliveryapi
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/code
+    restart: always
+    ports:
+        - "5000:5000"
