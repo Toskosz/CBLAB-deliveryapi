@@ -1,5 +1,5 @@
 up:
-	docker compose --env-file env up --build -d
+	docker compose up --build -d
 
 down: 
 	docker compose down

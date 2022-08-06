@@ -1,4 +1,3 @@
-from urllib import response
 from flask import request
 from flask_restplus import Resource, fields
 from server.instance import *
@@ -86,7 +85,7 @@ class EstadosPedido(Resource):
         novo_estado = request.get_json()
         dados_pedido = database.query_by_id(id)
         
-        if novo_estado['estado'] == 'CANCELED' or novo_estado['estado'] == 'DELIVERED':
+        if dados_pedido['estado'] == 'CANCELED' or dados_pedido['estado'] == 'DELIVERED':
             return {"message":"ESTADO_INESPERADO"}, 400
 
         dados_pedido['estado'] = novo_estado['estado']
