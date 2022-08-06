@@ -37,9 +37,9 @@ sudo make down
 | Funcionalidade | Método |Endpoint |
 | ------------------- | ------------------- | ------------------- |
 | Criar novo pedido | POST |/pedidos |
-| Consultar pedido | GET | /pedidos/<int:id> |
-| Atualizar pedido | PUT | /pedidos/<int:id> | 
-| Deletar pedido | DELETE | /pedididos/<int:id> |
+| Consultar pedido | GET | /pedidos/\<int:id\> |
+| Atualizar pedido | PUT | /pedidos/\<int:id\> | 
+| Deletar pedido | DELETE | /pedididos/\<int:id\> |
 | Consultar todos os pedidos | GET | /pedidos |
-| Consultar estado e possíveis ações de pedido | GET | /pedidos/<int:id>/estado |
-| Alterar estado de pedido | PUT | /pedidos/\<int:id>/estado |
+| Consultar estado e possíveis ações de pedido | GET | /pedidos/\<int:id\>/estado |
+| Alterar estado de pedido | PUT | /pedidos/\<int:id\>/estado |
